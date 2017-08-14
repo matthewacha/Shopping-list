@@ -2,18 +2,32 @@
 File name:styles
 Author:Matthew w
 */
-body{background-color:#228B22;padding-right:0px;
+body{
+	
+	background-color:;
 }
 
-main{
-	background-color:#C0C0C0; 
-	margin-right:320px;
-	border-color:#C0C0C0;}
-	
-login-panel{background-color:#FFF;}
+#main{
+	background-color:#C0C0C0;
+	border-color:#C0C0C0;
+	margin:0 auto;
+}
 
-main-panel{border-bottom:solid; 
-           border-bottom-color:#228B22; }
-main-back{paddin:120px 120px 120px 120px;}
-signup-panel{background-color:#A5FF7F;}
+#header{
+	height:60px;
+	background-color:#fff;
+    border-bottom:solid; 
+    border-bottom-color:#228B22; 
+	padding: 20px;
+}
+
+#panels{
+	background-color:#fff; 
+	padding:20px;
+}
+#signup-panel{
+	width:300px; 
+	margin:100px auto;
+	background-color:#A5FF7F;
+}
 
