@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
 File name:styles
 Author:Matthew w
@@ -18,16 +17,3 @@ main-panel{border-bottom:solid;
 main-back{paddin:120px 120px 120px 120px;}
 signup-panel{background-color:#A5FF7F}
 
-=======
-/*
-File name:styles
-Author:Matthew w
-*/
-body{background-color:;padding-right:0px;}
-main{
-	background-color:#C0C0C0; margin-right:320px;border-color:#C0C0C0;}
-login-panel{background-color:}
-main-panel{border-bottom:solid; border-bottom-color:#228B22 }
-signup-panel{background-color:#A5FF7F}
->>>>>>> babe0384fdfe8bf7c65678566a716c91fa42c804
-shopping-list-panel{}
