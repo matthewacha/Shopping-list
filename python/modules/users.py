@@ -1,5 +1,5 @@
 """module1-user module"""
-import data_storage
+"""import data_storage"""
 
 class create_user(object):
     def __init__(self,email,password,number):
