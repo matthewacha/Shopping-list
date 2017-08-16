@@ -9,38 +9,22 @@ class user_data(object):
         self.number=number
       
 
-    def add_password(self,password): 
-        if password not in passwords:   
-         passwords.append(self.password)
-        return
-    def add_email(self,email,emails):
-        if email not in emails:
-            emails.append(self.email)
-            return
-        else:
-            return 
-    def add_number(self,number,numbers):
-        if number not in numbers:
-            numbers.append(number)
-            return 
-        else:
-            return 
+    def add_password_email(self,email,password,details): 
+        if email,password not in details.items():   
+         details[email]=password
+        return details
+    
     def remove_number(self,number,numbers):
         if number in numbers:
             numbers.remove(number)
             return
         else:
             return 
-    def remove_email(self,email,emails):
-        if email in emails:
-            emails.remove(email)
-            return True  
-        else: 
-            return  False             
-    def remove_password(self,password,passwords):
-        passwords.remove(password)
-        return
-  
+    def remove_password_email(self,email,password,details): 
+        if email,password in details.items():   
+         details.pop(email,None)
+        return details      
+    
     def add_to_details(self,email,password):
        self.details[self.email]=self.password
 
