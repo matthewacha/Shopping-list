@@ -15,8 +15,7 @@ class create_user(object):
     def input_email(self,email):
         if email.isinstance(str) is True:
             for char in email:#check if email follows correct fomat
-              separater='@'
-                if char==separater:
+                if char=='@:
                     i=index(char)
                     right_half=[i:]
                     for char in right_half:
@@ -28,8 +27,8 @@ class create_user(object):
                 else:
                     return 'Not valid email'
 
-        data_storage.add_email(email)
-        return self.email
+          data_storage.add_email(email)
+          return self.email
 
     def input_number(self,number):
         if number.isinstance(int) is False:
