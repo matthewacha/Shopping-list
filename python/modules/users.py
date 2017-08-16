@@ -10,7 +10,7 @@ class create_user(object):
     def input_password(self,password):
         self.password=password
         data_storage.add_password(password)
-        return self.password
+        
 
     def input_email(self,email):
         self.email=email
@@ -22,6 +22,6 @@ class create_user(object):
             return('Please input digits')
         else:
             data_storage.add_number(number)
-            return self.number        
+            return self.number     
 
              
