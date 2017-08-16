@@ -1,5 +1,5 @@
-from flask import render_template
-from app import app
+from flask import Flask,render_template
+from shopping-list import app
 
 @app.route('/')
   def index():
