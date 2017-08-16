@@ -1,24 +1,21 @@
 """login feature,check if a value entered exists in the data based"""
 import data_storage
+from data_storage import user_data,assign_details
 
 class login(object):
-    def __init__(self,email,number,password):
+    def __init__(self,email,password):
         self.email=email
-        self.number=number
         self.password=password
+        
+
       
-    def check_name(self,email):
-        if self.email in data_storage.emails:
+    def check_email_password(self,email,password):
+        """email_address=raw_input('')
+        password=raw_input('')"""
+        if self.email in data_storage.user_data.details.items():
+            n=details[self.email]
+            if password==n:
             return True
         else:
             return False
-    def check_password(self,password):
-        if self.password in data_storage.passwords:
-            return True
-        else:
-            return False
-    def check_number(self,number):
-        if self.number in data_storage.numbers:
-            return True
-        else:
-            return False                        
+                         
