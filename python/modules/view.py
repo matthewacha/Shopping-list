@@ -1,21 +1,21 @@
-import data_storage
-from data_storage import user_data
+"""list data storage and manipulation"""
 
 class shopping_lists(object):
-    def __init__(self,shoplist,item,item_group=[]],list_group=[]):
+    """This adds and deletes lists of a user"""
+    def __init__(self,shoplist,item_name,list_group=[]):
       self.lists=lists
       self.list=shoplist
-      self.item=item
+      self.item_name=item_name
       self.item_group=item_group
     def add_list(self,shoplist,list_group):
       list_group.append(shoplist)
 
     def delete_list(self,shoplist,list_group):
       list_group.remove(shoplist)
-
-class shopping_list_items(shopping_lists):
-    def __init__(self,quantity,item_name,items={}):
-        self.item=item
+    """this adds and deletes items from a specific list"""
+class list_items(shopping_lists):
+    def __init__(self,items={},,quantity=0):
+        self.items=items
         self.quantity=quantity
 
     def add_item(self,item_name,quantity):      
