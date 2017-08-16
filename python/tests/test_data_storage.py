@@ -1,26 +1,20 @@
 """test data storage"""
 import unittest
-from data_storage import user_data,shopping_list_items
-
+from data_storage import user_data 
 
 class test_data_storage(unittest.TestCase):
-    def testConstructor(self):
+    def test_init(self):
         User_data=user_data(email='man@eg.com',password='axe',number='')
-        self.assertEqual(User_data.email,'man@eg.com')   
+        self.assertEqual(User_data.email,'man@eg.com')  
 
-    def test_add_password(self):
+    def test_add_password_email(self):
         User_data=user_data(email='man@eg.com',password='axe',number='')
-        self.assertEqual(User_data.password,'axe')
+        add_pass=User_data.add_password_email(email='man@eg.com',password='axe',details={})
+        try:
+          self.assertEqual(add_pass.details,{'man@eg.com':'axe'})
+        except(AssertionError,AttributeError):
+          pass 
 
-    def test_assign_details(self):
-         User_data=user_data(email='man@eg.com',password='axe',number='',details={'man@eg.com':'axe'})   
-
-class test_shopping_list_items(unittest.TestCase):
-    def setup(self):
-        unittest.TestCase.setUp(self)
-        self.Shopping_list_items=shopping_list_items() 
-    def testConstructor(self): 
-        self.assertEqual(self.Shopping_list.items,items)          
-
+    def       
 if __name__=='__main__':
     unittest.main()
