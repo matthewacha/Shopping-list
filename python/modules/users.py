@@ -15,7 +15,7 @@ class create_user(object):
     def input_email(self,email):
         if email.isinstance(str) is True:
             for char in email:#check if email follows correct fomat
-                if char=='@:
+                if char=='@':
                     i=index(char)
                     right_half=[i:]
                     for char in right_half:
