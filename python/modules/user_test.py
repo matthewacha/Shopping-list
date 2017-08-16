@@ -1,13 +1,10 @@
 import unittest
-from users import create_user
+from users import create_user # make sure u r importing properly
 
 class test_user(unittest.TestCase):
     def test_init(self):
-        self.Create_user=create_user(self,email,password,number)
-        self.email=email
-        self.password=password
-        self.number=number
-        self.assertEqual(self.Create_user.email,email)
+        new_user = create_user(email="b@example.com",password="password",number="") # what isnumber ?
+        self.assertEqual(new_user.email, "b@example.com")
 
 if __name__=='__main__':
-   unittest.main()        
+   unittest.main()    
