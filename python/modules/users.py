@@ -2,7 +2,7 @@
 """import data_storage"""
 
 class create_user(object):
-    def __init__(self,email,password,number):
+    def __init__(self,email,password,number,details):
         self.email=email
         self.password=password
         self.number=number
@@ -28,7 +28,6 @@ class create_user(object):
                 else:
                     return 'Not valid email'
 
-            newString='@'.split(email)
         data_storage.add_email(email)
         return self.email
 
