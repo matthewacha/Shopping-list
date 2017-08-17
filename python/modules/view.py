@@ -3,7 +3,7 @@ import data_storage
 from data_storage import user_data
 
 class shopping_lists(object):
-    """This adds and deletes lists of a user"""
+    """This adds and deletes user' shopping lists from dashboard"""
     def __init__(self,shoplist,item_name,list_group={}):
       self.lists=lists
       self.list=shoplist

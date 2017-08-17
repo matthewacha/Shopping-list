@@ -8,7 +8,8 @@ class login(object):
         self.password=password
         
 
-      
+     """checks if a password,email pair exist in details
+     returns True if it exists, and false if it doesnt""" 
     def check_email_password(self,email,password):
         if self.email in data_storage.user_data.details.items():
             n=details[self.email]

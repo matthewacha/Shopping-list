@@ -8,12 +8,15 @@ class user_data(object):
         self.quantity=quantity
         self.items=items
         self.item_name=item_name
+        """adds password and email as key:value pair in details"""
     def add_password_email(self,email,password,user_details):
         for self.email,self.password in self.user_details.items():    
           if self.email!=self.user_details.keys() and self.password!=self.user_details[self.email]:   
             self.user_details[self.email]=self.password
         return self.user_details
-
+        
+        """deletes email and password from details"""
+        
     def remove_password_email(self,email,password,user_details):
         for self.email,self.password in self.user_details.items():    
           if self.email!=self.user_details.keys() and self.password!=self.user_details[self.email]:   
