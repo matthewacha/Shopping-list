@@ -13,6 +13,8 @@ class create_user(object):
         
 
     def input_email(self,email):
+        i=0
+        j=0
         if email.isinstance(str) is True:
             for char in email:#check if email follows correct fomat
                 if char=='@':
