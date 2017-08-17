@@ -13,12 +13,11 @@ class user_data(object):
           if self.email!=self.details.keys() and self.password!=self.details[self.email]:   
             self.details[self.email]=self.password
         return self.details
-    
-    """def change_password_email(self,email,password,details):
+    def remove_password_email(self,email,password,details):
         for self.email,self.password in self.details.items():    
           if self.email!=self.details.keys() and self.password!=self.details[self.email]:   
-            self.details[self.email]=self.password
-        return self.details"""
+            self.details.pop(self.email)
+        return self.details
 
     def add_item(self,item_name,quantity): 
         try:     
