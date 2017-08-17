@@ -13,21 +13,10 @@ class create_user(object):
         
 
     def input_email(self,email):
-        i=0
-        j=0
-        if email.isinstance(str) is True:
-            for char in email:#check if email follows correct fomat
-                if char=='@':
-                    i=index(char)
-                    right_half=[i:]
-                    for char in right_half:
-                        if char=='.':
-                            right_half2=[j:]
-                            for char in right_half2:
-                                if right_half2.isinstance(str) is False:
-                                    return  'Not valid email'
-                else:
-                    return 'Not valid email'
+        if email=='':
+          return 'Not valid email'
+        else:
+         return self.email
 
           data_storage.add_email(email)
           return self.email
