@@ -13,7 +13,7 @@ class create_user(object):
         
 
     def input_email(self,email):
-        if email=='':
+        if self.email=='':
           return 'Not valid email'
         else:
          return self.email
