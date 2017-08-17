@@ -3,7 +3,6 @@ File name:styles
 Author:Matthew w
 */
 body{
-	
 	background-color:#fff;
 	margin:0 auto;
 }
@@ -27,7 +26,7 @@ body{
 	background-color:#fff;
     border-bottom:solid; 
     border-bottom-color:#228B22; 
-	padding: 0px;
+	padding: 0;
 }
 
 #panels{
