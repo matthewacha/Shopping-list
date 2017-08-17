@@ -18,7 +18,7 @@ class shopping_lists(object):
       self.list_group.pop(self.shoplist)
       return self.list_group
 
-     def check_list(self,shoplist,list_group):
-         return self.list_group.key(self.shoplist)
+    def check_list(self,shoplist,list_group):
+      return self.list_group.key(self.shoplist)
 
   
