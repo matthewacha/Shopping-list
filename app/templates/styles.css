@@ -1,0 +1,61 @@
+/*
+File name:styles
+Author:Matthew w
+*/
+body{
+	background-color:#fff;
+	margin:0 auto;
+}
+
+#main{
+	background-color:#C0C0C0;
+	border-color:#C0C0C0;
+	margin:0 auto;
+	padding-top:0;
+}
+
+#main-backgrnd{
+	background-color:#C0C0C0;
+	border-color:#C0C0C0;
+	margin:0 auto;
+	padding-top:50px;
+}
+
+#header{
+	height:60px;
+	background-color:#fff;
+    border-bottom:solid; 
+    border-bottom-color:#228B22; 
+	padding: 0;
+}
+
+#panels{
+	background-color:#fff; 
+	padding:20px;
+}
+
+#signup-panel{
+	width:300px; 
+	margin:100px auto;
+}
+
+#signup-panel2{
+	width:300px; 
+	margin:0;
+	background-color:#7A4DFF;
+}
+#panel-heading{
+    margin-left:100px;
+    background-color:#7A3A3C	
+}
+#form-group{margin-left:60px;margin-right:60px
+	
+	
+}
+#form-name{
+	margin-left:120px;
+}
+#pan-body{
+	background-color:#A6FF4D
+}
+#name-holder{background-color:#7A4DFF;}
